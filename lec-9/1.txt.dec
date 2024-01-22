@@ -1,0 +1,8 @@
+1. log(10^20) / log(2) ~= 66.4 bits
+
+2. log(62^8) / log(2) ~= 47.6 bits
+
+3. #1 is stronger
+
+4. 2^66 / 10^5 = 23 million years.
+   2^47 / 10^5 = 44 years

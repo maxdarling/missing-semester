@@ -1,0 +1,11 @@
+no locking (i.e. '*): I don't see why you'd do this, as you're leaving yourself open to breaking changes. but as
+long as you test after you build it should be fine...? (not if there are subtle issues, though).
+
+lock major version: the default behavior in semver, since major versions can have backwards incompatible changes.
+
+lock minor version: security issues? new features causing poor performance? or, you want to freeze the scope of
+the dependency to reduce complexity (e.g. Neovim stops at Lua 5.1.x. There's hash tables in 5.3.0, but they don't
+want to introduce that complexity, even if it is backwards compatible.
+
+lock patch version: perhaps useful if there's a security bug in the next patch, but no fix patch
+yet released.

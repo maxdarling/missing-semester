@@ -1,0 +1,6 @@
+it works. here are the commands: 
+
+openssl aes-256-cbc -salt -in 1.txt -out 1.txt.enc
+
+openssl aes-256-cbc -d -in 1.txt.enc -out 1.txt.dec
+
